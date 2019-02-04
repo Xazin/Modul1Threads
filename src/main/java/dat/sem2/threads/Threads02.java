@@ -14,9 +14,9 @@ public class Threads02 {
         Thread t = new Thread( new HelloTask() );
         System.out.println( "Starter tråd" );
         t.start();
-//        t.join();
+        t.join();
 //       t.join(3000);
-        Thread.sleep( 2500 );
+        Thread.sleep( 1601 );
         t.interrupt();
         System.out.println( "Main er færdig" );
     }
@@ -30,7 +30,7 @@ class HelloTask implements Runnable {
         try {
             for ( String msg : messages ) {
                 System.out.println( msg );
-                Thread.sleep( 1000 );
+                Thread.sleep( 400 );
             }
         } catch ( InterruptedException ex ) {
             System.out.println( "Hov - jeg blev afbrudt" );

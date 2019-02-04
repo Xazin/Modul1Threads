@@ -18,7 +18,7 @@ public class ThreadsSyncUnsafe {
                 @Override
                 public void run(){
                     for(int i = 0; i< noLoops; i++){
-                        c.add( addNumber );
+                            c.add(addNumber);
                     }
                 }
             };
@@ -42,8 +42,8 @@ class Counter {
         return counter;
     }
 
-    public void add( int amount ) {
-        int old = counter;
-        counter = old + amount;
+    public void add(int amount) {
+            int old = counter;
+            counter = old + amount;
     }
 }

@@ -18,7 +18,7 @@ public class Threads01 {
                 for ( String msg : messages ) {
                     System.out.println( msg );
                     try {
-                        Thread.sleep( 1000 );
+                        Thread.sleep( 999 );
                     } catch ( InterruptedException ex ) {
                         System.out.println( "Hov - jeg blev afbrudt" );
                     }

@@ -13,7 +13,9 @@ public class Threads03 {
         Thread t2 = new Thread( new TaskWithConstructor("Mandag", "Tirsdag","Onsdag","Torsdag","Fredag") );
         Thread t3 = new Thread( new TaskWithConstructor("Carlsberg", "Grimbergen", "Budweiser", "Thy", "Heineken") );
         System.out.println( "Starter tråd" );
-        t1.start(); t2.start(); t3.start();
+        t1.start();
+        t2.start();
+        t3.start();
         System.out.println( "Main er færdig" );
     }
 }
